@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: sans-serif;
@@ -26,9 +27,28 @@ p {
   padding: 15px;
 }
 
+.product-img {
+  float: left;
+  margin-right: 40px;
+}
+
+.product-description-box {
+  float: left;
+  width: 243px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.product-details-box {
+  float: left;
+  width: 243px;
+  margin-top: 20px;
+}
+
 .price-tag {
   font-size: 22px;
   margin-bottom: 0;
+  float: left;
 }
 
 .shipping {
@@ -37,6 +57,8 @@ p {
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 20px;
+  float: right;
+  margin-top: 8px;
 }
 
 .more-info {
@@ -59,7 +81,11 @@ p {
   margin-bottom: 15px;
   text-transform: uppercase;
   font-size: 16px;
-  margin-top: 30px;
+}
+
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
 }
 
 .add-cart {
