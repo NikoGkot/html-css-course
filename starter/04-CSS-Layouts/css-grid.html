@@ -36,13 +36,36 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        /* height: 500px; */
+
+        column-gap: 20px;
+        row-gap: 40px;
+      }
+
+      .el--8 {
+        /* ξεκινάει από τη στύλη 2 και τελειώνει στη 3 
+        αν τελειώνει σε ενα μετά απο το αρχικό μπορώ να μην το γράψω*/
+        grid-column: 2/3;
+        grid-row: 1;
+      }
+
+      .el--2 {
+        /* grid-column: 1/3; */
+        /* grid-column: 1 / span 2; */
+        /* πάει μέχρι το τελος */
+        grid-column: 2 / -1;
+        grid-row: 2 / 3;
       }
 
       .container--2 {
+        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
